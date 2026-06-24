@@ -1,0 +1,11 @@
+.env
+*.json
+*.log
+*.db
+watermark.png
+user_watermarks/
+watermarks/
+__pycache__/
+*.pyc
+venv/
+.venv/
