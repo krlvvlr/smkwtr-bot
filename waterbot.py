@@ -1,14 +1,4 @@
-"""
-Watermark Bot
-─────────────────────────────────────────────────────────────
-• Фото и видео — вотермарка в личке / группах / каналах
-• Реестр чатов с индивидуальными вотермарками
-• Разрешения пользователей внутри каждого чата
-• Логирование активности (загрузки, вотермарки) для владельца
-• Админ-панель на обычной клавиатуре под строкой ввода + inline-меню для точечных действий
-─────────────────────────────────────────────────────────────
-Зависимости:  pip install python-telegram-bot pillow python-dotenv moviepy
-"""
+
 
 import os
 import io
@@ -60,8 +50,7 @@ PROCESS_CONCURRENCY = int(os.environ.get("PROCESS_CONCURRENCY", "2"))
 PROCESS_SEMAPHORE = asyncio.Semaphore(PROCESS_CONCURRENCY)
 
 
-OWNER_ID = 8640550309  # ← ЗАМЕНИ НА СВОЙ TELEGRAM ID
-
+OWNER_ID = 1234567890
 DEFAULT_SETTINGS = {"opacity": 0.5, "scale": 0.3, "position": "bottom-right"}
 POSITIONS = ["top-left", "top-right", "bottom-left", "bottom-right", "center"]
 POSITION_LABELS = {
